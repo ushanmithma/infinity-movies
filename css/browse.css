@@ -1,0 +1,167 @@
+.main-search-field {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #1b1b1b80;
+	margin-top: calc(8vh + 25px);
+	margin-bottom: 25px;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+.main-search-field .search-heading {
+	width: calc(100% - 40px);
+	height: 4vh;
+	margin: 20px;
+}
+.main-search-field .search-heading h1 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	text-align: center;
+}
+.main-search-field .search-area {
+	width: 90%;
+	margin: 0 auto;
+}
+.main-search-field .search-area form .main-search-box {
+	margin: 25px 0;
+	display: flex;
+	flex-direction: row;
+}
+.main-search-field .search-area form .main-search-box input {
+	padding: 10px 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	width: 80%;
+	border: 1px solid white;
+	font-size: 16px;
+}
+.main-search-field .search-area form .main-search-box button {
+	border: 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 10px 8px;
+	width: 20%;
+	background-color: #ff9900;
+	font-size: 16px;
+}
+.main-search-field .search-area form .search-filters {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.main-search-field .search-area form .filters {
+	width: calc(50% - 24px);
+	margin: 20px 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.main-search-field .search-area form .filters label {
+	font-size: 16px;
+}
+.main-search-field .search-area form .filters select {
+	font-size: 16px;
+	padding: 6px 8px;
+}
+.main-search-field .search-mov-result {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.main-search-field .search-mov-result .mov-data {
+	margin: 10px;
+	width: calc(50% - 20px);
+	transition: all 0.4s ease;
+}
+.main-search-field .search-mov-result .mov-data a {
+	text-decoration: none;
+}
+.main-search-field .search-mov-result .mov-data a .mov-cover {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+.main-search-field .search-mov-result .mov-data a .mov-cover > img {
+	width: calc(100% - 2px);
+	display: block;
+	height: auto;
+	transition: all 0.4s ease;
+}
+.main-search-field .search-mov-result .mov-data a .mov-cover .cover-overlay {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s ease;
+	background-color: #ff99004d;
+}
+.main-search-field .search-mov-result .mov-data a .mov-cover .cover-overlay .mov-rating {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -70%);
+	-ms-transform: translate(-50%, -70%);
+	transform: translate(-50%, -70%);
+	text-align: center;
+}
+.main-search-field .search-mov-result .mov-data a .mov-cover .cover-overlay .mov-rating img {
+	width: 40px;
+}
+.main-search-field .search-mov-result .mov-data a .mov-cover .cover-overlay .mov-rating h3 {
+	font-size: 25px;
+}
+.main-search-field .search-mov-result .mov-data a > h3 {
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	margin-top: 10px;
+}
+.main-search-field .search-mov-result .mov-data a > p {
+	font-size: 16px;
+	color: #cccccc;
+	transition: all 0.4s ease;
+}
+
+@media screen and (min-width: 1024px) {
+	.main-search-field .search-area form .main-search-box {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.main-search-field .search-area form .main-search-box input:focus {
+		border: 1px solid #ff9900;
+	}
+	.main-search-field .search-area form .main-search-box button:hover {
+		cursor: pointer;
+	}
+	.main-search-field .search-area form .search-filters {
+		flex-wrap: nowrap;
+	}
+	.main-search-field .search-mov-result .mov-data {
+		margin: 20px;
+		width: calc(20% - 40px);
+	}
+	.main-search-field .search-mov-result .mov-data a .mov-cover:hover .cover-overlay {
+		opacity: 1;
+	}
+	.main-search-field .search-mov-result .mov-data a .mov-cover:hover > img {
+		transform: rotate(-3deg) scale(1.1);
+	}
+	.main-search-field .search-mov-result .mov-data a:hover > h3 {
+		color: #ff9900;
+	}
+	.main-search-field .search-mov-result .mov-data a:hover > p {
+		color: #ff9900;
+	}
+}

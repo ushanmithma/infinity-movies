@@ -1,0 +1,105 @@
+.requests-area {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: calc(8vh + 25px);
+	margin-bottom: 25px;
+	background-color: #1b1b1b80;
+	color: white;
+	border-radius: 10px;
+}
+.requests-area .req-heading {
+	width: calc(100% - 40px);
+	height: 4vh;
+	margin: 20px;
+}
+.requests-area .req-heading h1 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	float: left;
+	margin-top: 10px;
+}
+.requests-area .req-msg {
+	width: calc(100% - 40px);
+	text-align: center;
+	margin: 20px;
+}
+.requests-area .req-msg p {
+	font-style: italic;
+	color: #eee;
+}
+.requests-area .req-msg p.success {
+	color: #4caf50;
+}
+.requests-area .req-msg .errors p {
+	color: #f44336;
+}
+.requests-area form {
+	margin: 10px;
+	width: calc(100% - 20px);
+	display: flex;
+	flex-direction: column;
+}
+.requests-area form input, textarea {
+	width: 100%;
+	border: 1px solid #ff9900;
+	padding: 10px 8px;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.requests-area form textarea {
+	resize: none;
+}
+.requests-area form button {
+	border: 0;
+	padding: 10px 8px;
+	width: 100%;
+	background-color: #ff9900;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.requests-area form a {
+	padding: 10px 8px;
+	text-decoration: none;
+	width: 100%;
+	background-color: #ff9900;
+	font-size: 16px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: black;
+}
+@media screen and (min-width: 1024px) {
+	.requests-area form {
+		width: calc(50% - 20px);
+		display: block;
+		margin: 0 auto;
+		overflow: auto;
+	}
+	.requests-area form input[name=req-movie-name] {
+		float: left;
+		width: calc(50% - 10px);
+		margin-right: 10px;
+	}
+	.requests-area form input[name=req-movie-year] {
+		float: right;
+		width: 50%;
+	}
+	.requests-area form textarea {
+		width: 100%;
+		max-height: 400px;
+	}
+	.requests-area form button {
+		width: 200px;
+		float: left;
+	}
+	.requests-area form button:hover {
+		cursor: pointer;
+	}
+	.requests-area form a {
+		width: 200px;
+		float: left;
+	}
+	.requests-area form a:hover {
+		cursor: pointer;
+	}
+}

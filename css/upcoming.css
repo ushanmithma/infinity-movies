@@ -1,0 +1,150 @@
+.upcoming-area {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: calc(8vh + 25px);
+	margin-bottom: 25px;
+	background-color: #1b1b1b80;
+	color: white;
+	border-radius: 10px;
+}
+.upcoming-area .sec-name {
+	width: calc(100% - 40px);
+	height: 4vh;
+	margin: 20px;
+}
+.upcoming-area .sec-name h1 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	float: left;
+	margin-top: 10px;
+	padding-left: 8px;
+	border-left: 8px solid orange;
+}
+
+.upcoming-area .sec-name a {
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+	float: right;
+	text-decoration: none;
+	margin-top: 10px;
+	display: none;
+}
+.upcoming-area .mov-data {
+	margin: 10px;
+	width: calc(50% - 20px);
+	transition: all 0.4s ease;
+}
+.upcoming-area .mov-data a {
+	text-decoration: none;
+}
+.upcoming-area .mov-data a .mov-cover {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+.upcoming-area .mov-data a .mov-cover > img {
+	width: calc(100% - 2px);
+	display: block;
+	height: auto;
+	transition: all 0.4s ease;
+}
+.upcoming-area .mov-data a .mov-cover .cover-overlay {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s ease;
+	background-color: #ff99004d;
+}
+.upcoming-area .mov-data a .mov-cover .cover-overlay .view-imdb {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -70%);
+	-ms-transform: translate(-50%, -70%);
+	transform: translate(-50%, -70%);
+	text-align: center;
+}
+.upcoming-area .mov-data a .mov-cover .cover-overlay .view-imdb img {
+	width: 40px;
+}
+.upcoming-area .mov-data a .mov-cover .cover-overlay .view-imdb h3 {
+	font-size: 25px;
+}
+.upcoming-area .mov-data a > h3 {
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	margin-top: 10px;
+}
+.upcoming-area .mov-data a > p {
+	font-size: 16px;
+	color: #cccccc;
+	transition: all 0.4s ease;
+}
+.upcoming-area .mov-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.upcoming-area .view-more {
+	width: calc(100% - 40px);
+	margin: 0 20px;
+	text-align: right;
+}
+
+.upcoming-area .view-more a {
+	color: white;
+	font-size: 20px;
+	line-height: 2;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+	.upcoming-area {
+		width: calc(100% - 20px);
+		margin: 0 10px;
+		margin-top: calc(8vh + 25px);
+		margin-bottom: 25px;
+		float: left;
+	}
+	.upcoming-area .sec-name a {
+		display: block;
+		padding: 0 5px;
+		border-radius: 3px;
+		background-color: #ff9900;
+		transition: all 0.4s ease;
+	}
+	.upcoming-area .sec-name a:hover {
+		background-color: #ff990080;
+	}
+	.upcoming-area .mov-data {
+		margin: 20px;
+		width: calc(20% - 40px);
+	}
+	.upcoming-area .mov-data a .mov-cover:hover .cover-overlay {
+		opacity: 1;
+	}
+	.upcoming-area .mov-data a .mov-cover:hover > img {
+		transform: rotate(-3deg) scale(1.1);
+	}
+	.upcoming-area .mov-data a:hover > h3 {
+		color: #ff9900;
+	}
+	.upcoming-area .mov-data a:hover > p {
+		color: #ff9900;
+	}
+}

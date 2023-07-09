@@ -1,0 +1,613 @@
+.mov-banner {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	object-fit: cover;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-ms-filter: blur(5px);
+	-o-filter: blur(5px);
+}
+
+.mov-banner::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.cover-photo {
+	width: calc(100% - 30px);
+	margin: calc(8vh + 25px) auto 0 auto;
+}
+
+.cover-photo h1 {
+	color: white;
+	font-size: 30px;
+	line-height: 1.5;
+	text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.cover-photo h1 span {
+	color: white;
+	font-weight: bold;
+	background-color: #c4af3d;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	display: inline;
+	text-shadow: none;
+}
+.cover-photo h2 {
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.cover-photo h3 {
+	color: white;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1.2;
+}
+.mov-details {
+	width: calc(100% - 30px);
+	margin: 0 auto;
+	margin-top: 25px;
+	color: white;
+}
+.mov-details .poster-rating {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.mov-details .poster-rating .poster {
+	width: 50%;
+}
+.mov-details .poster-rating .poster img {
+	width: calc(100% - 2px);
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.mov-details .poster-rating .ratings {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mov-details .poster-rating .ratings .list-rating {
+	width: calc(100% - 20px);
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.mov-details .poster-rating .ratings .list-rating img {
+	height: 50px;
+}
+.mov-details .poster-rating .ratings .list-rating:first-child img {
+	height: 50px !important;
+}
+.mov-details .poster-rating .ratings .list-rating .rating-txt {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mov-details .poster-rating .ratings .list-rating .rating-txt h4 {
+	font-size: 18px;
+}
+.mov-details .details {
+	width: 100%;
+	margin-top: 25px;
+	clear: both;
+}
+.mov-details .details .about-mov {
+	width: 100%;
+}
+.mov-details .details .about-mov h4 {
+	font-size: 18px;
+	line-height: 1.5;
+}
+.mov-details .details .about-mov p {
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: justify;
+}
+.mov-details .details .about-mov p a {
+	text-decoration: none;
+	transition: all 0.4s ease;
+}
+.mov-details .details .about-mov > a {
+	font-size: 16px;
+	margin: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid white;
+	color: white;
+	display: block;
+	padding: 8px;
+	transition: all 0.4s ease;
+}
+.mov-details .details .downloads {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.mov-details .details .downloads .mov-download {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mov-details .details .downloads .mov-download p {
+	font-size: 18px;
+	display: block;
+	margin: 10px 0;
+}
+.mov-details .details .downloads .mov-download form {
+	width: 100%;
+}
+.mov-details .details .downloads .mov-download form button {
+	padding: 5px 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #ff990080;
+	color: white;
+	font-size: 18px;
+	border: 1px solid white;
+	width: calc(100% - 20px);
+	transition: all 0.4s ease;
+}
+.mov-details .details .downloads .mov-download > button {
+	padding: 5px 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #ff990080;
+	color: white;
+	font-size: 18px;
+	border: 1px solid white;
+	width: calc(100% - 20px);
+	transition: all 0.4s ease;
+}
+.mov-details .details .downloads .sub-download {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mov-details .details .downloads .sub-download p {
+	font-size: 18px;
+	display: block;
+	margin: 10px 0;
+}
+.mov-details .details .downloads .sub-download form {
+	width: 100%;
+}
+.mov-details .details .downloads .sub-download form button {
+	padding: 5px 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #ff990080;
+	color: white;
+	font-size: 18px;
+	border: 1px solid white;
+	width: calc(100% - 20px);
+	transition: all 0.4s ease;
+}
+.mov-details .details .downloads .sub-download > button {
+	padding: 5px 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #ff990080;
+	color: white;
+	font-size: 18px;
+	border: 1px solid white;
+	width: calc(100% - 20px);
+	transition: all 0.4s ease;
+}
+.similar-movies {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: #1b1b1b80;
+	color: white;
+	border-radius: 10px;
+}
+.similar-movies .sec-name {
+	width: calc(100% - 40px);
+	height: 4vh;
+	margin: 20px;
+}
+.similar-movies .sec-name h1 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	float: left;
+	margin-top: 10px;
+	padding-left: 8px;
+	border-left: 8px solid orange;
+}
+.similar-movies .mov-data {
+	margin: 10px;
+	width: calc(50% - 20px);
+}
+.similar-movies .mov-data a {
+	text-decoration: none;
+}
+.similar-movies .mov-data a img {
+	width: calc(100% - 2px);
+	border-radius: 10px;
+	border: 1px solid white;
+	transition: all 0.4s ease;
+}
+.similar-movies .mov-data a h3 {
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.4s ease;
+}
+.similar-movies .mov-data a p {
+	font-size: 16px;
+	color: #cccccc;
+	transition: all 0.4s ease;
+}
+.similar-movies .mov-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.most-download-view {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: #1b1b1b80;
+	color: white;
+	border-radius: 10px;
+}
+
+.most-download-view .sec-name {
+	width: calc(100% - 40px);
+	height: 4vh;
+	margin: 20px;
+}
+.most-download-view .sec-name h1 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	float: left;
+	margin-top: 10px;
+	padding-left: 8px;
+	border-left: 8px solid orange;
+}
+
+.most-download-view .sec-name a {
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+	float: right;
+	text-decoration: none;
+	margin-top: 10px;
+	display: none;
+}
+
+.most-download-view .mov-data {
+	margin: 10px;
+	width: calc(100% - 20px);
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 20px;
+}
+.most-download-view .mov-data:last-child {
+	border: none;
+}
+.most-download-view .mov-data a {
+	text-decoration: none;
+}
+
+.most-download-view .mov-data a .mov-cover {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	width: calc(20% - 12px);
+	border-radius: 10px;
+	margin-right: 10px;
+	border: 1px solid white;
+	transition: all 0.4s ease;
+	float: left;
+}
+.most-download-view .mov-data a .mov-cover img {
+	width: 100%;
+	display: block;
+	height: auto;
+	transition: all 0.4s ease;
+}
+.most-download-view .mov-data a .mov-cover .cover-overlay {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s ease;
+	background-color: #ff99004d;
+}
+.most-download-view .mov-data a .mov-cover .cover-overlay .mov-rating {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -70%);
+	-ms-transform: translate(-50%, -70%);
+	transform: translate(-50%, -70%);
+	text-align: center;
+}
+.most-download-view .mov-data a .mov-cover .cover-overlay .mov-rating img {
+	width: 40px;
+}
+.most-download-view .mov-data a .mov-cover .cover-overlay .mov-rating h3 {
+	font-size: 22px;
+}
+.most-download-view .mov-data a .mov-details {
+	width: 80%;
+	color: white;
+	margin: 0;
+	float: right;
+}
+.most-download-view .mov-data a .mov-details h3 {
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.4s ease;
+}
+.most-download-view .mov-data a .mov-details p {
+	font-size: 16px;
+	color: #cccccc;
+	transition: all 0.4s ease;
+}
+.most-download-view .mov-data a .mov-details .rating {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.most-download-view .mov-data a .mov-details .rating span {
+	font-size: 16px;
+}
+.most-download-view .mov-data a .mov-details .rating img {
+	width: 24px;
+	margin-right: 10px;
+	margin-bottom: 8px;
+}
+.most-download-view .mov-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.most-download-view .view-more {
+	width: calc(100% - 40px);
+	margin: 0 20px;
+	text-align: right;
+}
+
+.most-download-view .view-more a {
+	color: white;
+	font-size: 20px;
+	line-height: 2;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+
+	.cover-photo {
+		width: 90%;
+	}
+	.cover-photo h1 {
+		font-size: 40px;
+	}
+
+	.cover-photo h1 span {
+		font-size: 30px;
+	}
+	.cover-photo h2 {
+		font-size: 20px;
+	}
+	.cover-photo h3 {
+		font-size: 20px;
+	}
+	.mov-details {
+		margin: 25px 0 0 50px;
+		width: calc(70% - 50px);
+		float: left;
+	}
+	.mov-details .poster-rating {
+		width: calc(35% - 50px);
+		margin-right: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		float: left;
+	}
+	.mov-details .details {
+		width: 65%;
+		clear: none;
+		float: right;
+	}
+	.mov-details .poster-rating .poster {
+		width: 100%;
+	}
+	.mov-details .poster-rating .ratings {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+	.mov-details .poster-rating .ratings .list-rating {
+		width: 33.3%;
+		margin: 0;
+		margin-top: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.mov-details .poster-rating .ratings .list-rating img {
+		height: 40px;
+		margin-bottom: 10px;
+	}
+	.mov-details .poster-rating .ratings .list-rating:first-child img {
+		margin: 0;
+		height: 50px;
+	}
+	.mov-details .details .about-mov h4 {
+		font-size: 20px;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.mov-details .details .about-mov p {
+		font-size: 18px;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.mov-details .details .about-mov > a {
+		font-size: 18px;
+	}
+	.mov-details .details .about-mov > a:hover {
+		border-color: #c4302b;
+		color: #c4302b;
+	}
+	.mov-details .details .about-mov > a:focus {
+		border-color: #c4302b;
+		color: #c4302b;
+	}
+	.mov-details .details .downloads .mov-download form button {
+		font-size: 20px;
+	}
+	.mov-details .details .downloads .mov-download > button {
+		font-size: 20px;
+	}
+	.mov-details .details .downloads .mov-download form button:hover {
+		cursor: pointer;
+		background-color: orange;
+	}
+	.mov-details .details .downloads .mov-download > button:hover {
+		cursor: pointer;
+		background-color: orange;
+	}
+	.mov-details .details .downloads .sub-download form button {
+		font-size: 20px;
+	}
+	.mov-details .details .downloads .sub-download > button {
+		font-size: 20px;
+	}
+	.mov-details .details .downloads .sub-download form button:hover {
+		cursor: pointer;
+		background-color: orange;
+	}
+	.mov-details .details .downloads .sub-download > button:hover {
+		cursor: pointer;
+		background-color: orange;
+	}
+	.similar-movies {
+		width: calc(30% - 100px);
+		margin: 0 50px 0 50px;
+		float: right;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.similar-movies .mov-data {
+		margin: 10px;
+		width: calc(50% - 20px);
+	}
+	.similar-movies .mov-data a:hover img {
+		border: 1px solid #ff9900;
+	}
+	.similar-movies .mov-data a:hover h3 {
+		color: #ff9900;
+	}
+	.similar-movies .mov-data a:hover p {
+		color: #ff9900;
+	}
+	.similar-movies .mov-list {
+		clear: both;
+	}
+	.most-download-view {
+		width: calc(70% - 50px);
+		margin-left: 50px;
+		float: left;
+	}
+	.most-download-view .sec-name a {
+		display: block;
+		padding: 0 5px;
+		border-radius: 3px;
+		background-color: #ff9900;
+		transition: all 0.4s ease;
+	}
+	.most-download-view .sec-name a:hover {
+		background-color: #ff990080;
+	}
+	.most-download-view .mov-data {
+		margin: 10px;
+		width: calc(20% - 20px);
+		padding: 0;
+		border: none;
+	}
+	.most-download-view .mov-data a {
+		display: flex;
+		flex-direction: column;
+	}
+	.most-download-view .mov-data a .mov-cover {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	.most-download-view .mov-data a .mov-details {
+		width: 100%;
+		color: white;
+		float: none;
+		margin-top:12px;
+	}
+	.most-download-view .mov-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.most-download-view .mov-data a .mov-cover:hover .cover-overlay {
+		opacity: 1;
+	}
+	.most-download-view .mov-data a .mov-cover:hover > img {
+		transform: rotate(-3deg) scale(1.1);
+	}
+	.most-download-view .mov-data a:hover .mov-details h3 {
+		color: #ff9900;
+	}
+	.most-download-view .mov-data a:hover .mov-details p {
+		color: #ff9900;
+	}
+	.most-download-view .mov-data a .mov-details .rating {
+		display: none;
+	}
+
+}
